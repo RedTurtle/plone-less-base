@@ -1,0 +1,5 @@
+.history/
+.editorconfig
+.prettierrc.json
+.stylelintrc.json
+.travis.yml

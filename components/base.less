@@ -1,0 +1,54 @@
+// IE >= 10
+.escape-the-cage {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .plone-toolbar-left-default & {
+        width: calc(100vw - 60px);
+    }
+    .plone-toolbar-left-expanded & {
+        width: calc(100vw - 120px);
+    }
+}
+
+.link-on-dark-bg {
+    display: inline-block;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.1em dotted currentColor;
+
+    &:hover,
+    &:focus {
+        border-bottom-style: solid;
+    }
+}
+
+.documentByLine {
+    color: @plone-gray-light;
+    margin-bottom: 0.5rem;
+    font-size: 0.95em;
+}
+
+pre {
+    padding: 0.3rem 0.6rem;
+    border: 1px solid darken(@plone-gray-lighter, 3%);
+    background-color: lighten(@plone-gray-lighter, 3%);
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+abbr[title] {
+    text-decoration: none;
+}

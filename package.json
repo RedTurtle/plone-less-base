@@ -1,0 +1,38 @@
+{
+  "name": "plone-less-base",
+  "version": "0.1.0",
+  "description": "Base less styles for Plone 5 theming",
+  "main": "styles.less",
+  "scripts": {
+    "build": "lessc --include-path=node_modules -su=on -x --source-map styles.less lib/styles.css",
+    "test": "lessc --include-path=node_modules -su=on -x --source-map styles.less > /dev/null",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedTurtle/plone-less-base.git"
+  },
+  "keywords": [
+    "Plone",
+    "Theme",
+    "Theming",
+    "Less"
+  ],
+  "author": "Piero Nicolli <piero.nicolli@redturtle.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedTurtle/plone-less-base/issues"
+  },
+  "homepage": "https://github.com/RedTurtle/plone-less-base#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "plonetheme.barceloneta": "plone/plonetheme.barceloneta#2.1.2"
+  },
+  "devDependencies": {
+    "less": "^3.9.0",
+    "prettier": "^1.11.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-prettier": "^2.1.0",
+    "stylelint-config-recommended": "^2.1.0"
+  }
+}
