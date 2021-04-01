@@ -1,6 +1,6 @@
 {
   "name": "plone-less-base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Base less styles for Plone 5 theming",
   "main": "styles.less",
   "scripts": {
