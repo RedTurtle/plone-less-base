@@ -5,11 +5,13 @@
     width: 100vw;
     transform: translateX(-50%);
 
-    .plone-toolbar-left-default & {
-        width: calc(100vw - 60px);
-    }
-    .plone-toolbar-left-expanded & {
-        width: calc(100vw - 120px);
+    @media (min-width: @plone-screen-sm-min) {
+        .plone-toolbar-left-default & {
+            width: calc(100vw - 60px);
+        }
+        .plone-toolbar-left-expanded & {
+            width: calc(100vw - 120px);
+        }
     }
 }
 
